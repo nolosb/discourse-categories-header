@@ -1,12 +1,17 @@
 html.categories-header {
-  .below-site-header-outlet.categories-header {
+  .above-main-container-outlet.categories-header {
     margin: 4rem 0 2rem 0;
     .wrap {
       display: flex;
       flex-direction: row;
+      padding: 0 30px;
       column-gap: $gap;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      &:before,
+      &:after {
+        display: none;
+      }
       .categories-header-item {
         h3.category-title {
           margin: 0;
@@ -16,7 +21,7 @@ html.categories-header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            row-gap: 1rem;
+            row-gap: 1.5rem;
             .category-logo.aspect-image {
               display: flex;
               align-items: center;
